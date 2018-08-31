@@ -23,7 +23,7 @@ description              : "공부하고 배우고 함께하고"
 url                      : "https://bzuzsound.github.io"
 baseurl                  : "/cord2code"
 repository               : "https://github.com/bzuzsound/cord2code"
-teaser                   : "{{ site.url }}{{ site.baseurl }}/assets/img/UNADJUSTEDNONRAW_thumb_1616.jpg"
+teaser                   : "/assets/img/UNADJUSTEDNONRAW_thumb_1616.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -103,7 +103,7 @@ author:
   name             : "SH_ow-room"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "want to be Developer"
-  location         : "Somewhere"
+  location         : "Seoul, South Korea"
   email            : cord2code@gmail.com
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
