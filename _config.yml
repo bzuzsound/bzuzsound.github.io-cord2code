@@ -22,7 +22,7 @@ name                     : "cord2code"
 description              : "공부하고 배우고 함께하고"
 url                      : "https://bzuzsound.github.io"
 baseurl                  : "cord2code"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "https://github.com/bzuzsound/cord2code"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
