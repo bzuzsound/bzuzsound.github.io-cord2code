@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "호우호우"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "cord2code"
+description              : "공부하고 배우고 함께하고"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -100,9 +100,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "SH_ow-room"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "want to be Developer"
   location         : "Somewhere"
   email            :
   uri              :
