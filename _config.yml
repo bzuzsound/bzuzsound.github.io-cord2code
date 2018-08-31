@@ -269,3 +269,6 @@ defaults:
       comments: # true
       share: true
       related: true
+paginate: 10
+gems:
+  - jekyll-paginate
