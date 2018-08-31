@@ -23,7 +23,7 @@ description              : "공부하고 배우고 함께하고"
 url                      : "https://bzuzsound.github.io"
 baseurl                  : "/cord2code"
 repository               : "https://github.com/bzuzsound/cord2code"
-teaser                   : "/assets/img/UNADJUSTEDNONRAW_thumb_1616.jpg"
+teaser                   : "{{ site.url }}{{ site.baseurl }}/assets/img/UNADJUSTEDNONRAW_thumb_1616.jpg"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
