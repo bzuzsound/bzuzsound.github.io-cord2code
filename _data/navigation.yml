@@ -10,3 +10,22 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+# sidebar
+  sidebar:
+  title: ""
+  nav: sidebar-menu
+  sidebar-menu:
+  - title: "Learning"
+  children:
+    - title: "Java"
+      url: /
+    - title: "JavaScript"
+      url: /
+  - title: "Portfolio"
+    children:
+      - title: "ad-pool; 영상광고포털"
+        url: /
+      - title: "영화/드라마 스트리밍서비스"
+        url: /
+      
