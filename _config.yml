@@ -10,7 +10,7 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    :  "dirt" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -22,9 +22,11 @@ name                     : "cord2code"
 description              : "공부하고 배우고 함께하고"
 url                      : "https://bzuzsound.github.io"
 baseurl                  : "/cord2code"
-repository               : "https://github.com/bzuzsound/cord2code"
+repository               : "bzuzsound/cord2code"
+head_scripts:
+  - https://code.jquery.com/jquery-3.2.1.min.js
 teaser                   : "/assets/img/UNADJUSTEDNONRAW_thumb_1616.jpg"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
@@ -58,8 +60,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -100,12 +102,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "SH_ow-room"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Theo / SeungHo Choi"
+  avatar           : "/assets/img/UNADJUSTEDNONRAW_thumb_1616.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "want to be Developer"
   location         : "Seoul, South Korea"
   email            : cord2code@gmail.com
-  uri              :
+  uri              : "https://bzuzsound.github.io/cord2code/"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
@@ -194,12 +196,11 @@ sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -236,16 +237,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -253,7 +254,7 @@ tag_archive:
 compress_html:
   clippings: all
   ignore:
-    envs: development
+    envs: development # disable compression in dev environment
 
 
 # Defaults
@@ -261,7 +262,7 @@ defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: pages # posts, foo
     values:
       layout: single
       author_profile: true
@@ -269,6 +270,3 @@ defaults:
       comments: # true
       share: true
       related: true
-paginate: 10
-gems:
-  - jekyll-paginate

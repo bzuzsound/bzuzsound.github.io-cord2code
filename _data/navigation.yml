@@ -2,7 +2,7 @@
 main:
   - title: "github"
     url: https://github.com/bzuzsound/cord2code
-  - title: "About"
+  - title: "about"
     url: /about/
   # - title: "Sample Posts"
   #   url: /year-archive/
